@@ -8,9 +8,9 @@ def my_collect(arg)
     modified_collection = []
     
     while counter < arg.length 
-      yield arg[counter]
-      print arg[counter]
-      modified_collection << arg[counter]
+      new = yield arg[counter]
+      
+      modified_collection << new
       counter += 1 
     end
     modified_collection
